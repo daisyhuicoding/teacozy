@@ -1,16 +1,19 @@
 body {
+  margin: 0;
+  text-align: center;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9
-  margin: 0px;
-  border: 0;
 }
 
-.header {
-  border-bottom: 1px solid seashell;
+.flex {
   display: flex;
+}
+
+#header {
+  border-bottom: 1px solid seashell;
   position: fixed;
   align-items: center;
   justify-content: space-between;
@@ -18,14 +21,15 @@ body {
   height: 69px;
   z-index: 10;
   background-color: black;
-  top: 0;
 }
 
  a {
    color: seashell;
+   padding-left: 10px;
+   padding-right: 10px;
  }
 
- .header img {
+ #header img {
    height: 50px;
    padding-left: 10px;
 }
@@ -33,23 +37,86 @@ body {
 .container {
   position: relative;
   top: 69px;
-  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.mission {
+#mission {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   width: 1200px;
   height: 700px;
-  text-align: center;
 }
 
-.featured {
-  display: flex;
-  flex-flow: column wrap;
+/*look at spacing of h2 and h4*/
+#mission .content {
+  background-color: black;
+  position: relative;
+  top: 250px; /*check if there is a better way to set the relative position*/
+}
+
+#featured {
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  padding-top: 50px;
+}
+
+#options {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .option img {
   width: 300px;
   height: 200px;
+  padding: 10px 15px; /*find a better way for spacing*/
+}
+
+h4 {
+  padding: 10px 10px;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+#locations {
+  margin-top: 50px;
+  padding-top: 50px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+  flex-direction: column;
+}
+
+.threelocations {
+  position: relative;
+  top: 15px;
+  justify-content: center;
+}
+
+.location {
+  opacity: 1;
+  width: 300px;
+  background-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p {
+  padding: 10px 10px;
+}
+
+#contact {
+  height: 200px;
+}
+
+/*look at positioning*/
+.copyright {
+  margin: 20px 20px;
+  display: block;
+  text-align: left;
+  padding-top: 50px;
 }
