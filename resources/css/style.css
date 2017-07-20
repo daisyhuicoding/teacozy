@@ -36,7 +36,7 @@ body {
 
 .container {
   position: relative;
-  top: 69px;
+  top: 79px;
   flex-direction: column;
   align-items: center;
 }
@@ -47,11 +47,10 @@ body {
   height: 700px;
 }
 
-/*look at spacing of h2 and h4*/
 #mission .content {
   background-color: black;
   position: relative;
-  top: 250px; /*check if there is a better way to set the relative position*/
+  top: 250px; /*check if there is a better way to set the relative position, maybe use percentage*/
 }
 
 #featured {
@@ -69,7 +68,7 @@ body {
 .option img {
   width: 300px;
   height: 200px;
-  padding: 10px 15px; /*find a better way for spacing*/
+  padding: 10px 15px; /*maybe can use percentage for spacing*/
 }
 
 h4 {
